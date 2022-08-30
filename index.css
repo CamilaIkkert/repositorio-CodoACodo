@@ -1,0 +1,184 @@
+/* font-family: 'Handlee', cursive; */
+/* ESTILOS GENERALES */
+*{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+/* TITULO DEL JUEGO */
+.contenedorTitulo{
+    width: 30%;
+    height:6rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    background-color: rgb(0, 0, 9);
+    border: 2px solid rgb(188, 43, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(249, 119, 249);
+}
+.contenedorTitulo h1{
+    width: auto;
+    font-family: 'Handlee', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color:rgb(59, 174, 223);
+    text-shadow: 0 0 5px rgb(115, 180, 225);
+    letter-spacing:4px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/* JUEGO */
+.contenedorJuego{
+    width: 80%;
+    height: auto;
+    background-color: rgb(188, 43, 255);
+    box-shadow: 0 0 35px /* rgb(255, 30, 255) */ black;
+    margin-left: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+/* POP-UP DEL JUEGO */
+.open {
+    width: 30%;
+    margin-left: 35%;
+    font-family:'Handlee', cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing:1rem;
+    background-color: #000;
+    border: none;
+    padding: .5em 1em;
+    color: #fff;
+    box-shadow: 0 0 0 2px #000 inset;
+    border-radius: .25em;
+    cursor: pointer;
+    transition:.4s ease;
+}
+.open:hover {
+    letter-spacing: 1.25rem;
+    box-shadow: 0 0 10px rgb(115, 180, 225) ;
+    color: #000;
+    background-color:rgb(59, 174, 223);
+}
+.elegirEquipo{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em 3em;
+    text-align: center;
+    border-radius: .5em;
+    width: 50%;
+    height: 50%;
+    right: 20rem;
+    font-family: 'Handlee', cursive;
+    font-size:1.5rem;
+    color: black;
+}
+.popup-content{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+#rojo{
+    width: 40%; 
+    height:40%;
+    background-color: #c21006;
+    border: none;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    position: relative;
+    right: 10%;
+}
+#verde{
+    width: 40%; 
+    height:40%;
+    background-color: #119200;
+    border: none;
+    margin-top: 3rem;
+}
+.popup-close {
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.equipo__mensaje-exito-verde {
+	font-size: 2rem;
+	color: #119200;
+	display: none;
+}
+.equipo__mensaje-exito-rojo {
+	font-size: 2rem;
+	color: #c21006;
+	display: none;
+}
+.equipo__mensaje-exito-rojo-activo {
+	display: block;
+}
+.equipo__mensaje-exito-verde-activo {
+	display: block;
+}
+
+
+/* TABLERO DEL JUEGO TATETI */
+.juego {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 310px;
+    margin: 50px auto;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 2px rgb(115, 180, 225);
+    border: 1px solid rgb(59, 174, 223);
+    cursor: pointer;
+}
+
+
+/* DATOS AL FINALIZAR EL JUEGO */
+.resultados{
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* DATOS AL COSTADO DEL JUEGO */
+.data{
+    width:30%;
+    height:auto;
+    position: absolute;
+    left: 12rem;
+    bottom: 12rem;
+    font-family: 'Handlee', cursive;
+}
+#teamElegido{
+    font-size: 1rem;
+	color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+#teamElegido-activo{
+    display: block;
+}
+#turnoDe{
+    font-size: 1rem;
+	color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+#turnoDe-activo{
+    display: block;
+}

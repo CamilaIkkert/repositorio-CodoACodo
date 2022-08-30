@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta-Te-Tí</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div class="contenedorTitulo">
+        <h1>Ta - Te - Ti</h1>
+    </div>
+    <div class="contenedorJuego">
+        <button class="open">Start</button>
+        <div class="elegirEquipo" id="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <h2>Elige tu equipo</h2>
+                <button onclick="teamRojo()" id="rojo"></button>
+                <button onclick="teamVerde()" id="verde"></button>
+                <p class="equipo__mensaje-exito-rojo" id="equipo__mensaje-exito-rojo">Tu equipo es el rojo!</p>
+                <p class="equipo__mensaje-exito-verde" id="equipo__mensaje-exito-verde">Tu equipo es el verde!</p>
+            </div>
+        </div>
+        <div class="juego">
+            <div id="celda-0" class="cell" onclick=""></div>
+            <div id="celda-1" class="cell" onclick=""></div>
+            <div id="celda-2" class="cell" onclick=""></div>
+            <div id="celda-3" class="cell" onclick=""></div>
+            <div id="celda-4" class="cell" onclick=""></div>
+            <div id="celda-5" class="cell" onclick=""></div>
+            <div id="celda-6" class="cell" onclick=""></div>
+            <div id="celda-7" class="cell" onclick=""></div>
+            <div id="celda-8" class="cell" onclick=""></div>
+        </div>
+        <div class="data">
+            <h3>Equipo elegido:</h3>
+            <p id="teamElegido" onclick="teamRojo()" onclick="teamVerde()"></p>
+            <h3>Turno de:</h3>
+            <p id="turnoDe"></p>
+        </div>
+        <div class="resultados">
+            <button class="jugarOtraVez"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
